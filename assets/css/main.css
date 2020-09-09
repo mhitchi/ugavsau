@@ -6,16 +6,57 @@
 */
 
 body {
-    background-color: #efefef !important;
+    background-color: #000000 !important;
 }
 
 .container-fluid {
-    background-color: #efefef;
+    background-image: url("../images/4thq-stadium.jpg");
+    background-size: cover;
+    background-position: bottom;
+    margin: 5em 0 0 0;
 }
 
 .top {
-    margin: 0 10em 10em 0;
+    margin: 0 10em 3em 10em;
+    text-align: center;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Dosis", "Oswald", sans-serif;
+}
+
+h2 {
+    font-weight: 800 !important;
+    font-size: 60px !important;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.schools {
+    text-align: center;
+    color: #ffffff;
+}
+
+.count {
+    font-size: 30px
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
 
 /*  Extra small devices (portrait phones, less than 576px) */
  /* No media query for `xs` since this is the default in Bootstrap */
