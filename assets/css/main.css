@@ -3,6 +3,7 @@
     red: #ba0c2f
     creamery: #f1eee4
     black: #000000
+    orange: #f7721b
 */
 
 body {
@@ -14,20 +15,22 @@ body {
     background-size: cover;
     background-position: bottom;
     margin: 5em 0 0 0;
+    padding: 0 0 10em 0;
 }
 
-.top {
-    margin: 0 10em 3em 10em;
-    text-align: center;
-}
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     font-family: "Dosis", "Oswald", sans-serif;
 }
 
 h2 {
     font-weight: 800 !important;
     font-size: 60px !important;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em !important
 }
 
 p {
@@ -37,26 +40,74 @@ p {
 .schools {
     text-align: center;
     color: #ffffff;
+    margin: 20em 0 10em 0;
+    padding: 10em 0 10em 0;
 }
 
 .count {
     font-size: 30px
 }
 
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }
+.btn-aub {
+    background-color: #f7721b;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 8px;
+}
 
+.btn-uga {
+    background-color: #ba0c2f;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 8px;
+}
+
+
+#header {
+    background-image: linear-gradient(to right, #f7721b , #ba0c2f);
+    padding: 10px 10px; /* Some padding */
+    color: black;
+    text-align: center; /* Centered text */
+    font-size: 90px; /* Big font size */
+    font-weight: bold;
+    position: fixed; /* Fixed position - sit on top of the page */
+    top: 0;
+    height: 250px;
+    width: 100%; /* Full width */
+    transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    z-index: 99;
+    margin: 0 0 10em 0;
+}
+
+#header a {
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: .25em;
+    margin: 0 .25em .25em .25em;
+    padding: 8px;
+}
+
+#header a:hover {
+    background-color: rgb(255,255,255,0.75);
+    text-decoration: none;
+}
+
+.nav-aub {
+    float: left;
+    color: #f7721b !important;
+}
+
+
+.nav-uga {
+    float: right;
+    color: #ba0c2f !important;
+}
+
+#logo {
+    transition: 0.4s;
+    margin: 40px 0 0 0;
+}
 
 /*  Extra small devices (portrait phones, less than 576px) */
  /* No media query for `xs` since this is the default in Bootstrap */
