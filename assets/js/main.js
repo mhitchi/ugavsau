@@ -29,8 +29,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("header").style.height = "150px";
-    document.getElementById("logo").style.height = "250px";
-    document.getElementById("logo").style.width = "250px";
+    document.getElementById("logo").style.height = "175px";
+    document.getElementById("logo").style.width = "175px";
   } else {
     document.getElementById("header").style.height = "250px";
     document.getElementById("logo").style.height = "500px";

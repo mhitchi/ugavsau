@@ -66,6 +66,17 @@ p {
     text-align: center;
 }
 
+.aubCol {
+    background-color: rgb(247,144,27,0.5);
+    border-right: 1px #ffffff solid;
+    padding: 3em;
+}
+
+.ugaCol {
+    background-color: rgb(186,12,47,0.5);
+    border-left: 1px #ffffff solid;
+    padding: 3em;
+}
 
 .count {
     font-size: 30px;
