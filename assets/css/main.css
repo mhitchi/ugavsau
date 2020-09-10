@@ -1,9 +1,9 @@
 /* colors:
     off-white: #efefef 
-    red: #ba0c2f
+    red: #ba0c2f or rgb(186,12,47,0.75)
     creamery: #f1eee4
     black: #000000
-    orange: #f7721b
+    orange: #f7721b or rgb(247,144,27,0.75)
 */
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 .container-fluid {
-    background-image: url("../images/4thq-stadium.jpg");
+    background-image: url("../images/splitaubuga03.jpg");
     background-size: cover;
     background-position: bottom;
     margin: 5em 0 0 0;
@@ -60,22 +60,11 @@ p {
 }
 
 .schools {
+    background-image: linear-gradient(to right, rgb(247,144,27,0), rgb(186,12,47,0));
     color: #ffffff;
     padding: 2em;
     margin: 3em 0 10em 0;
     text-align: center;
-}
-
-.aubCol {
-    background-color: rgb(247,144,27,0.5);
-    border-right: 1px #ffffff solid;
-    padding: 3em;
-}
-
-.ugaCol {
-    background-color: rgb(186,12,47,0.5);
-    border-left: 1px #ffffff solid;
-    padding: 3em;
 }
 
 .count {
