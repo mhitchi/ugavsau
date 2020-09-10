@@ -12,8 +12,11 @@ $(document).ready(()=>{
         }).then((response) => {
             aubCount = response.DonorTotal;
             aubDate = response.LastUpdated;
-            let newAubDate = dateObj.getDate(aubDate);
-            console.log(`${aubCount} donors as of September ${newAubDate}, 2020.`);
+            let aubDay = dateObj.getDate(aubDate);
+            console.log(`${aubCount} donors as of September ${aubDay}, 2020.`);
+
+            $('#aubCount').append(`${aubCount}`)
+            $('#aubDate').append(`${aubDay}`)
         })
     }
 
