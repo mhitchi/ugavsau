@@ -20,17 +20,18 @@ body {
 
 
 h1, h2, h4, h5, h6 {
-    font-family: "Dosis", "Oswald", sans-serif;
+    font-family: "Teko", "Oswald", sans-serif;
 }
 
 h1 {
-    font-weight: 800 !important;
-    font-size: 100px !important;
+    font-weight: 600 !important;
+    font-size: 180px !important;
+    line-height: .5 !important;
 }
 
 h2 {
-    font-weight: 800 !important;
-    font-size: 60px !important;
+    font-weight: 600 !important;
+    font-size: 100px !important;
 }
 
 h3 {
@@ -39,36 +40,50 @@ h3 {
 }
 
 h4 {
-    font-weight: 600 !important;
+    font-weight: 400 !important;
+    font-size: 2em !important;
 }
 
 p {
     font-family: "Open Sans", sans-serif;
+    font-size: 1.25em !important;
 }
 
 .days-left {
     text-align: center;
     color: #ffffff;
-    margin: 20em 0 1em 0;
-    padding: 10em 0 1em 0;
+    margin: 23em 0 0 0;
+    padding: 10em 0 0 0;
 }
 
 .blurb {
     background-color: rgb(0,0,0,0.75);
     color: #ffffff;
     padding: 2em 6em 2em 6em;
+    margin: 2em 0 2em 0;
 }
 
 .schools {
     background-image: linear-gradient(to right, rgb(247,144,27,0), rgb(186,12,47,0));
     color: #ffffff;
-    padding: 2em;
-    margin: 3em 0 10em 0;
+    padding: 0 0 2em 0;
+    margin: -3em 0 10em 0;
     text-align: center;
 }
 
 .count {
-    font-size: 30px;
+    font-family: "Teko", "Oswald", sans-serif;
+    font-size: 80px !important;
+    line-height: .5 !important;
+    padding: .35em 0 0 0;
+}
+
+.donorsRight {
+    text-align: right;
+}
+
+.donorsLeft {
+    text-align: left;
 }
 
 .date {
@@ -79,14 +94,16 @@ p {
     background-color: #f7721b;
     border-radius: 5px;
     color: #ffffff;
-    padding: 8px;
+    margin: 2em 0 0 0 !important;
+    padding: 8px 16px 8px 16px !important;
 }
 
 .btn-uga {
     background-color: #ba0c2f;
     border-radius: 5px;
     color: #ffffff;
-    padding: 8px;
+    margin: 2em 0 0 0 !important;
+    padding: 8px 16px 8px 16px !important;
 }
 
 
@@ -151,7 +168,7 @@ p {
 .give-btn-aub:hover {
     background-color: #f7721b !important;
     color: #ffffff !important;
-    padding: 10px 14px 10px 14px;
+    padding: 10px 35px 10px 35px;
     transition: 0.2s;
 }
 
@@ -170,7 +187,7 @@ p {
 .give-btn-uga:hover {
     background-color: #ba0c2f !important;
     color: #ffffff !important;
-    padding: 10px 14px 10px 14px;
+    padding: 10px 35px 10px 35px;
     transition: 0.2s;
 }
 
