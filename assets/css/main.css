@@ -11,7 +11,7 @@ body {
 }
 
 .container-fluid {
-    background-image: url("../images/splitaubuga03.jpg");
+    background-image: url("../images/splitaubuga04.jpg");
     background-size: cover;
     background-position: bottom;
     margin: 5em 0 0 0;
@@ -46,7 +46,7 @@ h4 {
 
 p {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.25em !important;
+    font-size: 1.25em;
 }
 
 .blurb a {
@@ -65,18 +65,18 @@ a:hover {
 
 #header {
     background-image: linear-gradient(to right, #f7721b , #ba0c2f);
-    padding: 10px 10px; /* Some padding */
     color: black;
+    height: 250px;
     text-align: center; /* Centered text */
     font-size: 90px; /* Big font size */
     font-weight: bold;
+    margin: 0 0 10em 0;
+    padding: 10px 10px; /* Some padding */
     position: fixed; /* Fixed position - sit on top of the page */
     top: 0;
-    height: 250px;
-    width: 100%; /* Full width */
     transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    width: 100%; /* Full width */
     z-index: 99;
-    margin: 0 0 10em 0;
 }
 
 #header a {
@@ -98,7 +98,6 @@ a:hover {
     color: #f7721b !important;
     float: left;
 }
-
 
 .nav-uga {
     color: #ba0c2f !important;
@@ -130,20 +129,6 @@ a:hover {
     font-size: .2em !important;
     font-weight: 400;
     line-height: .25em;
-}
-
-.days-left {
-    text-align: center;
-    color: #ffffff;
-    margin: 20em 0 0 0;
-    padding: 10em 0 0 0;
-}
-
-.blurb {
-    background-color: rgb(0,0,0,0.75);
-    color: #ffffff;
-    padding: 2em 15em 2em 15em;
-    margin: 2em 0 2em 0;
 }
 
 .schools {
@@ -230,13 +215,113 @@ a:hover {
  /* No media query for `xs` since this is the default in Bootstrap */
 
  /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {
+    .detail, .date {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1em !important;
+        line-height: .65em;
+    }
+    .nav-aub {
+        display: none;
+    }
+    .nav-uga {
+        display: none;
+    }
+    .days-left {
+        text-align: center;
+        color: #ffffff;
+        margin: 18em 0 4em 0;
+        padding: 10em 0 0 0;
+    }
+    .school-name {
+        line-height: .5em;
+    }
+    .give-btn-aub {
+        margin: 0 0 2em 0;
+    }
+    .blurb {
+        background-color: rgb(0,0,0,0.75);
+        color: #ffffff;
+        padding: 2em 3em 2em 3em;
+        margin: 2em 0 2em 0;
+    }
+}
 
  /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+    .detail, .date {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1em !important;
+        line-height: .75em;
+    }
+    .nav-aub {
+        display: none;
+    }
+    .nav-uga {
+        display: none;
+    }
+    .days-left {
+        text-align: center;
+        color: #ffffff;
+        margin: 18em 0 0 0;
+        padding: 10em 0 0 0;
+    }
+    .school-name {
+        line-height: .75em;
+    }
+    .blurb {
+        background-color: rgb(0,0,0,0.75);
+        color: #ffffff;
+        padding: 2em 5em 2em 5em;
+        margin: 2em 0 2em 0;
+    }
+}
 
  /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+    .detail, .date {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.25em !important;
+        line-height: 1em;
+    }
+    .nav-aub {
+        display: block;
+    }
+    .nav-uga {
+        display: block;
+    }
+    .days-left {
+        text-align: center;
+        color: #ffffff;
+        margin: 20em 0 0 0;
+        padding: 10em 0 0 0;
+    }
+    .school-name {
+        line-height: 1em;
+    }
+    .blurb {
+        background-color: rgb(0,0,0,0.75);
+        color: #ffffff;
+        padding: 2em 10em 2em 10em;
+        margin: 2em 0 2em 0;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+    .detail, .date {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.25em !important;
+        line-height: 1em;
+    }
+    .school-name {
+        line-height: 1em;
+    }
+    .days-left {
+        text-align: center;
+        color: #ffffff;
+        margin: 20em 0 0 0;
+        padding: 10em 0 0 0;
+    }
+
+}
