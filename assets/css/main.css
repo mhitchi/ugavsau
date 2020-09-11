@@ -95,14 +95,14 @@ a:hover {
 }
 
 .nav-aub {
-    float: left;
     color: #f7721b !important;
+    float: left;
 }
 
 
 .nav-uga {
-    float: right;
     color: #ba0c2f !important;
+    float: right;
 }
 
 #logo {
