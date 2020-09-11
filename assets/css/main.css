@@ -23,17 +23,6 @@ h1, h2, h4, h5, h6 {
     font-family: "Teko", "Oswald", sans-serif;
 }
 
-h1 {
-    font-weight: 600 !important;
-    font-size: 180px !important;
-    line-height: .5 !important;
-}
-
-h2 {
-    font-weight: 600 !important;
-    font-size: 100px !important;
-}
-
 h3 {
     font-family: "Open Sans", sans-serif;
     font-size: 3em !important
@@ -216,10 +205,19 @@ a:hover {
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    h1 {
+        font-weight: 600 !important;
+        font-size: 140px !important;
+        line-height: .5 !important;
+    }
+    h2 {
+        font-weight: 600 !important;
+        font-size: 80px !important;
+    }
     .detail, .date {
         font-family: "Open Sans", sans-serif;
         font-size: 1em !important;
-        line-height: .65em;
+        line-height: .75em;
     }
     .nav-aub {
         display: none;
@@ -249,10 +247,14 @@ a:hover {
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .detail, .date {
-        font-family: "Open Sans", sans-serif;
-        font-size: 1em !important;
-        line-height: .75em;
+    h1 {
+        font-weight: 600 !important;
+        font-size: 180px !important;
+        line-height: .5 !important;
+    }
+    h2 {
+        font-weight: 600 !important;
+        font-size: 100px !important;
     }
     .nav-aub {
         display: none;
