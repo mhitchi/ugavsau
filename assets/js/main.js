@@ -1,3 +1,29 @@
+ // COUNTER
+ let start // set on the first step to the timestamp provided
+ const elements = Array.from(document.getElementsByClassName('count')) // get the elements
+ console.log(elements);
+
+ elements.forEach(el => {
+      const final = parseInt(el.textContent, 10) // parse out the final number
+      console.log(final);
+     const duration = 2000 // duration in ms
+     const step = ts => {
+     if (!start) {
+         start = ts
+     }
+     // get the time passed as a fraction of total duration
+     let progress = (ts - start) / duration 
+
+     el.textContent = Math.floor(progress * final) // set the text
+     if (progress < 1) {
+         // if we're not 100% complete, request another animation frame
+         requestAnimationFrame(step) 
+     }
+     }
+
+     // start the animation
+     requestAnimationFrame(step)
+  })
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction()};

@@ -49,85 +49,19 @@ p {
     font-size: 1.25em !important;
 }
 
-.nav-stats .aubCount {
-    color: #ffffff;
-    font-family: "Teko", "Oswald", sans-serif;
-    font-size: .5em !important;
-    line-height: .25em;
+.blurb a {
+    color: #ffffff !important;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none !important;
 }
 
-.nav-stats .ugaCount {
-    color: #ffffff;
-    font-family: "Teko", "Oswald", sans-serif;
-    font-size: .5em !important;
-    line-height: .25em;
+a:hover {
+    color: #ffffff !important;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none !important;
 }
-
-.nav-stats .total-txt {
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-size: .2em !important;
-    font-weight: 400;
-    line-height: .25em;
-}
-
-.days-left {
-    text-align: center;
-    color: #ffffff;
-    margin: 20em 0 0 0;
-    padding: 10em 0 0 0;
-}
-
-.blurb {
-    background-color: rgb(0,0,0,0.75);
-    color: #ffffff;
-    padding: 2em 6em 2em 6em;
-    margin: 2em 0 2em 0;
-}
-
-.schools {
-    background-image: linear-gradient(to right, rgb(247,144,27,0), rgb(186,12,47,0));
-    color: #ffffff;
-    padding: 0 0 2em 0;
-    margin: -3em 0 10em 0;
-    text-align: center;
-}
-
-.count {
-    font-family: "Teko", "Oswald", sans-serif;
-    font-size: 80px !important;
-    line-height: .5 !important;
-    padding: .35em 0 0 0;
-}
-
-.donorsRight {
-    text-align: right;
-}
-
-.donorsLeft {
-    text-align: left;
-}
-
-.date {
-    text-align: center;
-}
-
-.btn-aub {
-    background-color: #f7721b;
-    border-radius: 5px;
-    color: #ffffff;
-    margin: 2em 0 0 0 !important;
-    padding: 8px 16px 8px 16px !important;
-}
-
-.btn-uga {
-    background-color: #ba0c2f;
-    border-radius: 5px;
-    color: #ffffff;
-    margin: 2em 0 0 0 !important;
-    padding: 8px 16px 8px 16px !important;
-}
-
 
 #header {
     background-image: linear-gradient(to right, #f7721b , #ba0c2f);
@@ -174,6 +108,85 @@ p {
 #logo {
     transition: 0.4s;
     margin: 40px 0 0 0;
+}
+
+.nav-stats .aubCount {
+    color: #ffffff;
+    font-family: "Teko", "Oswald", sans-serif;
+    font-size: .5em !important;
+    line-height: .25em;
+}
+
+.nav-stats .ugaCount {
+    color: #ffffff;
+    font-family: "Teko", "Oswald", sans-serif;
+    font-size: .5em !important;
+    line-height: .25em;
+}
+
+.nav-stats .total-txt {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: .2em !important;
+    font-weight: 400;
+    line-height: .25em;
+}
+
+.days-left {
+    text-align: center;
+    color: #ffffff;
+    margin: 20em 0 0 0;
+    padding: 10em 0 0 0;
+}
+
+.blurb {
+    background-color: rgb(0,0,0,0.75);
+    color: #ffffff;
+    padding: 2em 15em 2em 15em;
+    margin: 2em 0 2em 0;
+}
+
+.schools {
+    background-image: linear-gradient(to right, rgb(247,144,27,0), rgb(186,12,47,0));
+    color: #ffffff;
+    padding: 0 0 2em 0;
+    margin: -3em 0 10em 0;
+    text-align: center;
+}
+
+.count {
+    font-family: "Teko", "Oswald", sans-serif;
+    font-size: 80px !important;
+    line-height: .5 !important;
+    padding: .35em 0 0 0;
+}
+
+.donorsRight {
+    text-align: right;
+}
+
+.donorsLeft {
+    text-align: left;
+}
+
+.date {
+    text-align: center;
+}
+
+.btn-aub {
+    background-color: #f7721b;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 2em 0 0 0 !important;
+    padding: 8px 16px 8px 16px !important;
+}
+
+.btn-uga {
+    background-color: #ba0c2f;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 2em 0 0 0 !important;
+    padding: 8px 16px 8px 16px !important;
 }
 
 .give-btn-aub {
