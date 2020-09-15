@@ -95,6 +95,7 @@ a:hover {
     font-family: "Teko", "Oswald", sans-serif;
     font-size: .5em !important;
     line-height: .25em;
+    margin: .25em 0 .25em 0;
 }
 
 .nav-stats .ugaCount {
@@ -102,6 +103,7 @@ a:hover {
     font-family: "Teko", "Oswald", sans-serif;
     font-size: .5em !important;
     line-height: .25em;
+    margin: .25em 0 .25em 0;
 }
 
 .nav-stats .total-txt {
@@ -294,6 +296,7 @@ a:hover {
     }
     .school-name {
         line-height: .5em;
+        margin: 0 0 .15em 0;
     }
     .give-btn-aub {
         font-size: 65px !important;
@@ -359,7 +362,8 @@ a:hover {
         text-align: center;
     }
     .school-name {
-        line-height: 1.25em;
+        line-height: 1.5em;
+        margin: 0 0 .35em 0;
     }
     .donorsRight {
         text-align: center;
@@ -426,12 +430,15 @@ a:hover {
         text-align: center;
     }
     .school-name {
-        line-height: 1.25em;
+        line-height: 1.5em;
+        margin: 0 0 .35em 0;
+    }
+    .donorsLeft .count {
+        padding: 0 0 0 .28em;
     }
     .donorsRight {
         text-align: right;
     }
-    
     .donorsLeft {
         text-align: left;
     }
@@ -467,6 +474,13 @@ a:hover {
         margin: 220px 0 0 0;
         padding: 10em 0 0 0;
         text-align: center;
+    }
+    .school-name {
+        line-height: 1.5em;
+        margin: 0 0 .35em 0;
+    }
+    .donorsLeft .count {
+        padding: 0 0 0 .28em;
     }
     .detail, .date {
         font-family: "Open Sans", sans-serif;
