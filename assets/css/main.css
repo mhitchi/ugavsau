@@ -200,7 +200,7 @@ a:hover {
     }
     p {
         font-family: "Open Sans", sans-serif;
-        font-size: 2.5em !important;
+        font-size: 2em;
     }
     .detail, .date {
         font-family: "Open Sans", sans-serif;
@@ -223,9 +223,10 @@ a:hover {
     }
     .school-name {
         line-height: .5em;
+        margin: 0 0 .35em 0;
     }
     .count {
-        font-size: 10em !important;
+        font-size: 10em;
     }
     .donorsRight {
         text-align: center;
@@ -296,7 +297,10 @@ a:hover {
     }
     .school-name {
         line-height: .5em;
-        margin: 0 0 .15em 0;
+        margin: 0 0 .35em 0;
+    }
+    .count {
+        font-size: 10em !important;
     }
     .give-btn-aub {
         font-size: 65px !important;
@@ -364,6 +368,9 @@ a:hover {
     .school-name {
         line-height: 1.5em;
         margin: 0 0 .35em 0;
+    }
+    .count {
+        font-size: 10em !important;
     }
     .donorsRight {
         text-align: center;
@@ -433,6 +440,9 @@ a:hover {
         line-height: 1.5em;
         margin: 0 0 .35em 0;
     }
+    .count {
+        font-size: 12em !important;
+    }
     .donorsLeft .count {
         padding: 0 0 0 .28em;
     }
@@ -444,18 +454,18 @@ a:hover {
     }
     .give-btn-aub {
         font-size: 25px !important;
-        padding: 10px;
+        padding: 10px 45px 10px 45px;
     }
     .give-btn-aub:hover {
-        padding: 10px 35px 10px 35px;
+        padding: 10px 75px 10px 75px;
         transition: 0.2s;
     }
     .give-btn-uga {
         font-size: 25px !important;
-        padding: 10px;
+        padding: 10px 45px 10px 45px;
     }
     .give-btn-uga:hover {
-        padding: 10px 35px 10px 35px;
+        padding: 10px 75px 10px 75px;
         transition: 0.2s;
     }
     .blurb {
@@ -477,7 +487,10 @@ a:hover {
     }
     .school-name {
         line-height: 1.5em;
-        margin: 0 0 .35em 0;
+        margin: 0 0 .15em 0;
+    }
+    .count {
+        font-size: 14em !important;
     }
     .donorsLeft .count {
         padding: 0 0 0 .28em;
@@ -492,10 +505,27 @@ a:hover {
         line-height: 1em;
     }
     .donorsRight {
-        text-align: right;
+        padding-right: 5em;
+        text-align: center;
     }
-    
     .donorsLeft {
-        text-align: left;
+        padding-left: 5em;
+        text-align: center;
+    }
+    .give-btn-aub {
+        font-size: 25px !important;
+        padding: 10px 45px 10px 45px;
+    }
+    .give-btn-aub:hover {
+        padding: 10px 75px 10px 75px;
+        transition: 0.2s;
+    }
+    .give-btn-uga {
+        font-size: 25px !important;
+        padding: 10px 45px 10px 45px;
+    }
+    .give-btn-uga:hover {
+        padding: 10px 75px 10px 75px;
+        transition: 0.2s;
     }
 }
