@@ -122,17 +122,7 @@ a:hover {
 
 .count {
     font-family: "Teko", "Oswald", sans-serif;
-    /* font-size: 80px !important; */
-    line-height: .5 !important;
-    padding: .35em 0 0 0;
-}
-
-.donorsRight {
-    text-align: right;
-}
-
-.donorsLeft {
-    text-align: left;
+    line-height: .75em;
 }
 
 .date {
@@ -162,6 +152,7 @@ a:hover {
     color: #f7721b !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 600 !important;
+    margin: 1em 0 0 0;
 }
 
 .give-btn-aub:hover {
@@ -177,8 +168,7 @@ a:hover {
     font-family: "Open Sans", sans-serif;
     font-size: 25px !important;
     font-weight: 600 !important;
-    padding: 10px;
-
+    margin: 1em 0 0 0;
 }
 
 .give-btn-uga:hover {
@@ -214,6 +204,7 @@ a:hover {
         font-family: "Open Sans", sans-serif;
         font-size: 2em !important;
         line-height: .75em;
+        padding: 0 0 .5em 0;
     }
     .nav-aub {
         display: none;
@@ -234,13 +225,21 @@ a:hover {
     .count {
         font-size: 10em !important;
     }
+    .donorsRight {
+        text-align: center;
+    }
+    
+    .donorsLeft {
+        text-align: center;
+    }
     .give-btn-aub {
         font-size: 65px !important;
-        margin: 0 0 2em 0;
+        margin: .25em 0 2em 0;
         padding: 30px 60px 30px 60px;
     }
     .give-btn-uga {
         font-size: 65px !important;
+        margin: .25em 0 2em 0;
         padding: 30px 60px 30px 60px;
     }
     .blurb {
@@ -278,6 +277,7 @@ a:hover {
         font-family: "Open Sans", sans-serif;
         font-size: 2em !important;
         line-height: .75em;
+        padding: 0 0 .5em 0;
     }
     .nav-aub {
         display: none;
@@ -297,12 +297,20 @@ a:hover {
     }
     .give-btn-aub {
         font-size: 65px !important;
-        margin: 0 0 2em 0;
+        margin: .5em 0 2em 0;
         padding: 30px 60px 30px 60px;
     }
     .give-btn-uga {
         font-size: 65px !important;
+        margin: .5em 0 2em 0;
         padding: 30px 60px 30px 60px;
+    }
+    .donorsRight {
+        text-align: center;
+    }
+    
+    .donorsLeft {
+        text-align: center;
     }
     .blurb {
         background-color: rgb(0,0,0,0.75);
@@ -346,15 +354,22 @@ a:hover {
     .days-left {
         color: #ffffff;
         display: inline-block;
-        margin: 380px 0 0 0;
+        margin: 250px 0 0 0;
         padding: 10em 0 0 0;
         text-align: center;
     }
     .school-name {
         line-height: .75em;
     }
+    .donorsRight {
+        text-align: center;
+    }
+    
+    .donorsLeft {
+        text-align: center;
+    }
     .give-btn-aub {
-        font-size: 35px !important;
+        font-size: 55px !important;
         padding: 30px 60px 30px 60px;
     }
     .give-btn-aub:hover {
@@ -362,7 +377,7 @@ a:hover {
         transition: 0.2s;
     }
     .give-btn-uga {
-        font-size: 35px !important;
+        font-size: 55px !important;
         padding: 30px 60px 30px 60px;
     }
     .give-btn-uga:hover {
@@ -395,6 +410,7 @@ a:hover {
         font-family: "Open Sans", sans-serif;
         font-size: 1.25em !important;
         line-height: 1em;
+        padding: 0 0 .5em 0;
     }
     .nav-aub {
         display: block;
@@ -405,12 +421,19 @@ a:hover {
     .days-left {
         color: #ffffff;
         display: inline-block;
-        margin: 380px 0 0 0;
+        margin: 250px 0 0 0;
         padding: 10em 0 0 0;
         text-align: center;
     }
     .school-name {
         line-height: 1em;
+    }
+    .donorsRight {
+        text-align: right;
+    }
+    
+    .donorsLeft {
+        text-align: left;
     }
     .give-btn-aub {
         font-size: 25px !important;
@@ -438,12 +461,27 @@ a:hover {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .days-left {
+        color: #ffffff;
+        display: inline-block;
+        margin: 220px 0 0 0;
+        padding: 10em 0 0 0;
+        text-align: center;
+    }
     .detail, .date {
         font-family: "Open Sans", sans-serif;
         font-size: 1.25em !important;
         line-height: 1em;
+        padding: 0 0 .5em 0;
     }
     .school-name {
         line-height: 1em;
+    }
+    .donorsRight {
+        text-align: right;
+    }
+    
+    .donorsLeft {
+        text-align: left;
     }
 }
