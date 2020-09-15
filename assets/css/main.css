@@ -8,6 +8,7 @@
 
 body {
     background-color: #000000 !important;
+    min-height: 2960px;
 }
 
 .container-fluid {
@@ -185,9 +186,9 @@ a:hover {
     color: #ffffff !important;
 }
 
-/*  Extra small devices (portrait phones, less than 576px) */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 576px) {
+
+ /* Extra small devices (portrait phones, 300px and up) */
+ @media (min-width: 300px) {
     h1 {
         font-weight: 600 !important;
         font-size: 140px !important;
@@ -195,23 +196,23 @@ a:hover {
     }
     h2 {
         font-weight: 600 !important;
-        font-size: 100px !important;
+        font-size: 80px !important;
     }
-    h3 {
+    /* h3 {
         font-family: "Open Sans", sans-serif;
         font-size: 4em !important
-    }
+    } */
     h4 {
         font-weight: 400 !important;
         font-size: 4em !important;
     }
     p {
         font-family: "Open Sans", sans-serif;
-        font-size: 2em;
+        font-size: 2.5em !important;
     }
     .detail, .date {
         font-family: "Open Sans", sans-serif;
-        font-size: .75em !important;
+        font-size: 2em !important;
         line-height: .75em;
     }
     .nav-aub {
@@ -222,26 +223,25 @@ a:hover {
     }
     .days-left {
         color: #ffffff;
-        margin: 18em 0 4em 0;
+        display: inline-block;
+        margin: 380px 0 4em 0;
         padding: 10em 0 0 0;
         text-align: center;
     }
     .school-name {
         line-height: .5em;
     }
-    .donorsRight {
-        text-align: center;
-    }
-    .donorsLeft {
-        text-align: center;
-    }
-    .detail, .date {
-        font-family: "Open Sans", sans-serif;
-        font-size: 2em !important;
-        line-height: .75em;
+    .count {
+        font-size: 10em !important;
     }
     .give-btn-aub {
+        font-size: 65px !important;
         margin: 0 0 2em 0;
+        padding: 30px 60px 30px 60px;
+    }
+    .give-btn-uga {
+        font-size: 65px !important;
+        padding: 30px 60px 30px 60px;
     }
     .blurb {
         background-color: rgb(0,0,0,0.75);
@@ -309,6 +309,12 @@ a:hover {
         color: #ffffff;
         padding: 2em 3em 2em 3em;
         margin: 2em 0 2em 0;
+    }
+    .donorsLeft a {
+        font-size: .75em;
+    }
+    .donorsRight a {
+        font-size: .75em;
     }
 }
 
