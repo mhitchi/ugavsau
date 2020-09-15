@@ -14,7 +14,8 @@ body {
     background-image: url("../images/splitaubuga04.jpg");
     background-size: cover;
     background-position: bottom;
-    margin: 5em 0 0 0;
+    float: none;
+    margin: 10em 0 0 0;
     padding: 0 0 10em 0;
 }
 
@@ -23,19 +24,8 @@ h1, h2, h4, h5, h6 {
     font-family: "Teko", "Oswald", sans-serif;
 }
 
-h3 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 3em !important
-}
-
-h4 {
-    font-weight: 400 !important;
-    font-size: 2em !important;
-}
-
-p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.25em;
+em {
+    font-size: .75em;
 }
 
 .blurb a {
@@ -79,6 +69,7 @@ a:hover {
 
 #header a:hover {
     background-color: rgb(255,255,255,0.75);
+    font-weight: bold;
     text-decoration: none;
     transition: 0.4s;
 }
@@ -130,7 +121,7 @@ a:hover {
 
 .count {
     font-family: "Teko", "Oswald", sans-serif;
-    font-size: 80px !important;
+    /* font-size: 80px !important; */
     line-height: .5 !important;
     padding: .35em 0 0 0;
 }
@@ -169,16 +160,12 @@ a:hover {
     border-radius: 5px;
     color: #f7721b !important;
     font-family: "Open Sans", sans-serif;
-    font-size: 25px !important;
     font-weight: 600 !important;
-    padding: 10px;
 }
 
 .give-btn-aub:hover {
     background-color: #f7721b !important;
     color: #ffffff !important;
-    padding: 10px 35px 10px 35px;
-    transition: 0.2s;
 }
 
 .give-btn-uga {
@@ -196,8 +183,6 @@ a:hover {
 .give-btn-uga:hover {
     background-color: #ba0c2f !important;
     color: #ffffff !important;
-    padding: 10px 35px 10px 35px;
-    transition: 0.2s;
 }
 
 /*  Extra small devices (portrait phones, less than 576px) */
@@ -212,9 +197,21 @@ a:hover {
         font-weight: 600 !important;
         font-size: 100px !important;
     }
+    h3 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 4em !important
+    }
+    h4 {
+        font-weight: 400 !important;
+        font-size: 4em !important;
+    }
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2em;
+    }
     .detail, .date {
         font-family: "Open Sans", sans-serif;
-        font-size: 1em !important;
+        font-size: .75em !important;
         line-height: .75em;
     }
     .nav-aub {
@@ -224,10 +221,10 @@ a:hover {
         display: none;
     }
     .days-left {
-        text-align: center;
         color: #ffffff;
         margin: 18em 0 4em 0;
         padding: 10em 0 0 0;
+        text-align: center;
     }
     .school-name {
         line-height: .5em;
@@ -235,9 +232,13 @@ a:hover {
     .donorsRight {
         text-align: center;
     }
-
     .donorsLeft {
         text-align: center;
+    }
+    .detail, .date {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2em !important;
+        line-height: .75em;
     }
     .give-btn-aub {
         margin: 0 0 2em 0;
@@ -261,9 +262,21 @@ a:hover {
         font-weight: 600 !important;
         font-size: 80px !important;
     }
+    /* h3 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 4em !important
+    } */
+    h4 {
+        font-weight: 400 !important;
+        font-size: 4em !important;
+    }
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2em;
+    }
     .detail, .date {
         font-family: "Open Sans", sans-serif;
-        font-size: 1em !important;
+        font-size: 2em !important;
         line-height: .75em;
     }
     .nav-aub {
@@ -273,16 +286,23 @@ a:hover {
         display: none;
     }
     .days-left {
-        text-align: center;
         color: #ffffff;
-        margin: 280px 0 4em 0;
+        display: inline-block;
+        margin: 380px 0 4em 0;
         padding: 10em 0 0 0;
+        text-align: center;
     }
     .school-name {
         line-height: .5em;
     }
     .give-btn-aub {
+        font-size: 65px !important;
         margin: 0 0 2em 0;
+        padding: 30px 60px 30px 60px;
+    }
+    .give-btn-uga {
+        font-size: 65px !important;
+        padding: 30px 60px 30px 60px;
     }
     .blurb {
         background-color: rgb(0,0,0,0.75);
@@ -303,6 +323,14 @@ a:hover {
         font-weight: 600 !important;
         font-size: 100px !important;
     }
+    h3 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 4em !important
+    }
+    h4 {
+        font-weight: 400 !important;
+        font-size: 4em !important;
+    }
     .nav-aub {
         display: none;
     }
@@ -310,13 +338,30 @@ a:hover {
         display: none;
     }
     .days-left {
-        text-align: center;
         color: #ffffff;
-        margin: 280px 0 0 0;
+        display: inline-block;
+        margin: 380px 0 0 0;
         padding: 10em 0 0 0;
+        text-align: center;
     }
     .school-name {
         line-height: .75em;
+    }
+    .give-btn-aub {
+        font-size: 35px !important;
+        padding: 30px 60px 30px 60px;
+    }
+    .give-btn-aub:hover {
+        padding: 40px 70px 40px 70px;
+        transition: 0.2s;
+    }
+    .give-btn-uga {
+        font-size: 35px !important;
+        padding: 30px 60px 30px 60px;
+    }
+    .give-btn-uga:hover {
+        padding: 40px 70px 40px 70px;
+        transition: 0.2s;
     }
     .blurb {
         background-color: rgb(0,0,0,0.75);
@@ -328,6 +373,18 @@ a:hover {
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    h3 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 3em !important
+    }
+    h4 {
+        font-weight: 400 !important;
+        font-size: 2em !important;
+    }
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.25em;
+    }
     .detail, .date {
         font-family: "Open Sans", sans-serif;
         font-size: 1.25em !important;
@@ -340,13 +397,30 @@ a:hover {
         display: block;
     }
     .days-left {
-        text-align: center;
         color: #ffffff;
-        margin: 280px 0 0 0;
+        display: inline-block;
+        margin: 380px 0 0 0;
         padding: 10em 0 0 0;
+        text-align: center;
     }
     .school-name {
         line-height: 1em;
+    }
+    .give-btn-aub {
+        font-size: 25px !important;
+        padding: 10px;
+    }
+    .give-btn-aub:hover {
+        padding: 10px 35px 10px 35px;
+        transition: 0.2s;
+    }
+    .give-btn-uga {
+        font-size: 25px !important;
+        padding: 10px;
+    }
+    .give-btn-uga:hover {
+        padding: 10px 35px 10px 35px;
+        transition: 0.2s;
     }
     .blurb {
         background-color: rgb(0,0,0,0.75);
@@ -366,11 +440,4 @@ a:hover {
     .school-name {
         line-height: 1em;
     }
-    .days-left {
-        text-align: center;
-        color: #ffffff;
-        margin: 300px 0 0 0;
-        padding: 10em 0 0 0;
-    }
-
 }
