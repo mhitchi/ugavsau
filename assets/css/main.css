@@ -206,7 +206,7 @@ a:hover {
         font-family: "Open Sans", sans-serif;
         font-size: 2em !important;
         line-height: .75em;
-        padding: 0 0 .5em 0;
+        padding: 5px;
     }
     .nav-aub {
         display: none;
@@ -214,26 +214,12 @@ a:hover {
     .nav-uga {
         display: none;
     }
-    .days-left {
-        color: #ffffff;
-        display: inline-block;
-        margin: 380px 0 4em 0;
-        padding: 10em 0 0 0;
-        text-align: center;
-    }
     .school-name {
         line-height: .5em;
-        margin: 0 0 .35em 0;
+        margin: 5em 0 .35em 0;
     }
     .count {
         font-size: 10em;
-    }
-    .donorsRight {
-        text-align: center;
-    }
-    
-    .donorsLeft {
-        text-align: center;
     }
     .give-btn-aub {
         font-size: 65px !important;
@@ -280,7 +266,7 @@ a:hover {
         font-family: "Open Sans", sans-serif;
         font-size: 2em !important;
         line-height: .75em;
-        padding: 0 0 .5em 0;
+        padding: 5px;
     }
     .nav-aub {
         display: none;
@@ -288,16 +274,9 @@ a:hover {
     .nav-uga {
         display: none;
     }
-    .days-left {
-        color: #ffffff;
-        display: inline-block;
-        margin: 380px 0 4em 0;
-        padding: 10em 0 0 0;
-        text-align: center;
-    }
     .school-name {
         line-height: .5em;
-        margin: 0 0 .35em 0;
+        margin: 5em 0 .35em 0;
     }
     .count {
         font-size: 10em !important;
@@ -312,24 +291,11 @@ a:hover {
         margin: .5em 0 2em 0;
         padding: 30px 60px 30px 60px;
     }
-    .donorsRight {
-        text-align: center;
-    }
-    
-    .donorsLeft {
-        text-align: center;
-    }
     .blurb {
         background-color: rgb(0,0,0,0.75);
         color: #ffffff;
         padding: 2em 3em 2em 3em;
         margin: 2em 0 2em 0;
-    }
-    .donorsLeft a {
-        font-size: .75em;
-    }
-    .donorsRight a {
-        font-size: .75em;
     }
 }
 
@@ -358,26 +324,12 @@ a:hover {
     .nav-uga {
         display: none;
     }
-    .days-left {
-        color: #ffffff;
-        display: inline-block;
-        margin: 250px 0 0 0;
-        padding: 10em 0 0 0;
-        text-align: center;
-    }
     .school-name {
         line-height: 1.5em;
-        margin: 0 0 .35em 0;
+        margin: 3.5em 0 .35em 0;
     }
     .count {
         font-size: 10em !important;
-    }
-    .donorsRight {
-        text-align: center;
-    }
-    
-    .donorsLeft {
-        text-align: center;
     }
     .give-btn-aub {
         font-size: 55px !important;
@@ -421,7 +373,7 @@ a:hover {
         font-family: "Open Sans", sans-serif;
         font-size: 1.25em !important;
         line-height: 1em;
-        padding: 0 0 .5em 0;
+        padding: 5px;
     }
     .nav-aub {
         display: block;
@@ -429,28 +381,12 @@ a:hover {
     .nav-uga {
         display: block;
     }
-    .days-left {
-        color: #ffffff;
-        display: inline-block;
-        margin: 250px 0 0 0;
-        padding: 10em 0 0 0;
-        text-align: center;
-    }
     .school-name {
         line-height: 1.5em;
-        margin: 0 0 .35em 0;
+        margin: 3.5em 0 .35em 0;
     }
     .count {
         font-size: 12em !important;
-    }
-    .donorsLeft .count {
-        padding: 0 0 0 .28em;
-    }
-    .donorsRight {
-        text-align: right;
-    }
-    .donorsLeft {
-        text-align: left;
     }
     .give-btn-aub {
         font-size: 25px !important;
@@ -478,16 +414,9 @@ a:hover {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .days-left {
-        color: #ffffff;
-        display: inline-block;
-        margin: 220px 0 0 0;
-        padding: 10em 0 0 0;
-        text-align: center;
-    }
     .school-name {
         line-height: 1.5em;
-        margin: 0 0 .15em 0;
+        margin: 4em 0 .15em 0;
     }
     .count {
         font-size: 14em !important;
@@ -499,18 +428,7 @@ a:hover {
         font-family: "Open Sans", sans-serif;
         font-size: 1.25em !important;
         line-height: 1em;
-        padding: 0 0 .5em 0;
-    }
-    .school-name {
-        line-height: 1em;
-    }
-    .donorsRight {
-        padding-right: 5em;
-        text-align: center;
-    }
-    .donorsLeft {
-        padding-left: 5em;
-        text-align: center;
+        padding: 5px;
     }
     .give-btn-aub {
         font-size: 25px !important;
