@@ -8,11 +8,11 @@
 
 body {
     background-color: #000000 !important;
-    min-height: 2960px;
+    min-height: 2147px;
 }
 
 .container-fluid {
-    background-image: url("../images/splitaubuga04.jpg");
+    background-image: url("../images/splitaubuga05.jpg");
     background-size: cover;
     background-position: bottom;
     float: none;
@@ -54,7 +54,7 @@ a:hover {
     padding: 10px 10px; /* Some padding */
     position: fixed; /* Fixed position - sit on top of the page */
     top: 0;
-    transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    transition: 0.4s ease-in-out; /* Add a transition effect (when scrolling - and font size is decreased) */
     width: 100%; /* Full width */
     z-index: 99;
 }
@@ -72,7 +72,7 @@ a:hover {
     background-color: rgb(255,255,255,0.75);
     font-weight: bold;
     text-decoration: none;
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
 }
 
 .nav-aub {
@@ -86,7 +86,7 @@ a:hover {
 }
 
 #logo {
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
     margin: 40px 0 0 0;
 }
 
@@ -337,7 +337,7 @@ a:hover {
     }
     .give-btn-aub:hover {
         padding: 40px 70px 40px 70px;
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
     }
     .give-btn-uga {
         font-size: 55px !important;
@@ -345,7 +345,7 @@ a:hover {
     }
     .give-btn-uga:hover {
         padding: 40px 70px 40px 70px;
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
     }
     .blurb {
         background-color: rgb(0,0,0,0.75);
@@ -394,7 +394,7 @@ a:hover {
     }
     .give-btn-aub:hover {
         padding: 10px 75px 10px 75px;
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
     }
     .give-btn-uga {
         font-size: 25px !important;
@@ -402,7 +402,7 @@ a:hover {
     }
     .give-btn-uga:hover {
         padding: 10px 75px 10px 75px;
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
     }
     .blurb {
         background-color: rgb(0,0,0,0.75);
@@ -436,7 +436,7 @@ a:hover {
     }
     .give-btn-aub:hover {
         padding: 10px 75px 10px 75px;
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
     }
     .give-btn-uga {
         font-size: 25px !important;
@@ -444,6 +444,6 @@ a:hover {
     }
     .give-btn-uga:hover {
         padding: 10px 75px 10px 75px;
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
     }
 }
