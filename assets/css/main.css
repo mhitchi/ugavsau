@@ -8,7 +8,6 @@
 
 body {
     background-color: #000000 !important;
-    min-height: 2147px;
 }
 
 .container-fluid {
@@ -20,8 +19,13 @@ body {
     padding: 0 0 10em 0;
 }
 
+h1 {
+    color: #ffffff;
+    font-size: 10px !important;
+    text-align: center;
+}
 
-h1, h2, h4, h5, h6 {
+h2, h4, h5, h6 {
     font-family: "Teko", "Oswald", sans-serif;
 }
 
@@ -184,11 +188,6 @@ a:hover {
 
  /* Extra small devices (portrait phones, 300px and up) */
  @media (min-width: 300px) {
-    h1 {
-        font-weight: 600 !important;
-        font-size: 140px !important;
-        line-height: .5 !important;
-    }
     h2 {
         font-weight: 600 !important;
         font-size: 80px !important;
@@ -250,11 +249,6 @@ a:hover {
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    h1 {
-        font-weight: 600 !important;
-        font-size: 140px !important;
-        line-height: .5 !important;
-    }
     h2 {
         font-weight: 600 !important;
         font-size: 80px !important;
@@ -316,11 +310,6 @@ a:hover {
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    h1 {
-        font-weight: 600 !important;
-        font-size: 180px !important;
-        line-height: .5 !important;
-    }
     h2 {
         font-weight: 600 !important;
         font-size: 100px !important;
