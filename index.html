@@ -30,8 +30,14 @@
         <!-- TROUBLE srcset="./assets/images/beatweekwm-transp02-350x314.png 350w, 
                             ./assets/images/beatweekwm-transp02-500x438.png 500w" -->
                             <!-- needs to shrink when window is less than 1200px wide -->
-             <img class="animate__animated animate__slideInDown" id="logo"   
-                        src="./assets/images/beatweekwm-transp02-500x438.png" alt="Auburn versus UGA Beat Week" style="max-width:500px"/>
+             <img id="logo" srcset="./assets/images/beatweekwm-transp02-350x314.png 350w, 
+                            ./assets/images/beatweekwm-transp02-500x438.png 500w"
+                            src="./assets/images/beatweekwm-transp02-500x438.png" 
+                            sizes="
+                                (min-width: 300px) 350px,
+                                (min-width: 1200px) 500px;
+                                "
+                            alt="Auburn versus UGA Beat Week" style="max-width:500px"/>
         <div class="nav-uga">
             <a href="#" style="color: #ba0c2f">Give to Georgia</a>
             <div class="nav-stats">
