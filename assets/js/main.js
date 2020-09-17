@@ -1,13 +1,13 @@
  
 
-// When the user scrolls down 50px from the top of the document, resize the header's font size
+// When the user scrolls down 100px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction()};
 
 let navStats = Array.from(document.getElementsByClassName("nav-stats"));
 let daysLeft = Array.from(document.getElementsByClassName("days-left"));
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     document.getElementById("header").style.height = "150px";
     document.getElementById("logo").style.height = "155px";
     document.getElementById("logo").style.width = "175px";

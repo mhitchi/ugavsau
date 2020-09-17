@@ -159,11 +159,13 @@ a:hover {
     font-family: "Open Sans", sans-serif;
     font-weight: 600 !important;
     margin: 1em 0 0 0;
+    transition: 0.4s ease-in-out;
 }
 
 .give-btn-aub:hover {
     background-color: #f7721b !important;
     color: #ffffff !important;
+    transition: 0.4s ease-in-out;
 }
 
 .give-btn-uga {
@@ -175,11 +177,13 @@ a:hover {
     font-size: 25px !important;
     font-weight: 600 !important;
     margin: 1em 0 0 0;
+    transition: 0.4s ease-in-out;
 }
 
 .give-btn-uga:hover {
     background-color: #ba0c2f !important;
     color: #ffffff !important;
+    transition: 0.4s ease-in-out;
 }
 
 .schools {
