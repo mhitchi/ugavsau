@@ -249,6 +249,9 @@ a:hover {
     .donorsRight {
         text-align: left;
     }
+    .header {
+        margin: 0 0 50em 0;
+    }
 }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -310,6 +313,9 @@ a:hover {
     .donorsRight {
         text-align: left;
     }
+    .header {
+        margin: 0 0 30em 0;
+    }
 }
 
  /* Medium devices (tablets, 768px and up) */
@@ -366,6 +372,9 @@ a:hover {
     }
     .donorsRight {
         text-align: left;
+    }
+    .header {
+        margin: 0 0 30em 0;
     }
 }
 
@@ -430,6 +439,9 @@ a:hover {
     .donorsRight {
         text-align: right;
     }
+    .header {
+        margin: 0 0 35em 0;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -465,5 +477,8 @@ a:hover {
     .give-btn-uga:hover {
         padding: 10px 75px 10px 75px;
         transition: 0.2s ease-in-out;
+    }
+    .header {
+        margin: 0 0 45em 0;
     }
 }
