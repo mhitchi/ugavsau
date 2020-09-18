@@ -195,7 +195,7 @@ a:hover {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     font-weight: 600;
-    margin: 0 1em 3em 1em;
+    margin: 0 1em .5em 1em;
     text-align: center;
     text-shadow: 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
 }
@@ -260,7 +260,7 @@ a:hover {
         text-align: left;
     }
     .header {
-        margin: 0 0 50em 0;
+        margin: 0 0 22em 0;
     }
 }
 
@@ -324,7 +324,7 @@ a:hover {
         text-align: left;
     }
     .header {
-        margin: 0 0 30em 0;
+        margin: 0 0 22em 0;
     }
 }
 
@@ -384,7 +384,7 @@ a:hover {
         text-align: left;
     }
     .header {
-        margin: 0 0 30em 0;
+        margin: 0 0 20em 0;
     }
 }
 
@@ -450,7 +450,7 @@ a:hover {
         text-align: right;
     }
     .header {
-        margin: 0 0 35em 0;
+        margin: 0 0 20em 0;
     }
 }
 
@@ -489,6 +489,6 @@ a:hover {
         transition: 0.2s ease-in-out;
     }
     .header {
-        margin: 0 0 40em 0;
+        margin: 0 0 22em 0;
     }
 }
