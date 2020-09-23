@@ -105,4 +105,8 @@ $(document).ready(()=>{
     getUgaData();
     getAubData();
 
+    //set timer to update ugaData every minute
+    setTimeout(()=> {
+        getUgaData();
+    }, 1000);
 })
