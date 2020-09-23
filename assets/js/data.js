@@ -26,7 +26,7 @@ $(document).ready(()=>{
 
             // COUNTER
             let start // set on the first step to the timestamp provided
-            const elements = Array.from(document.getElementsByClassName('count')) // get the elements
+            const elements = Array.from(document.getElementsByClassName('aubCount')) // get the elements
             console.log(elements);
 
             elements.forEach(el => {
@@ -61,8 +61,8 @@ $(document).ready(()=>{
             type: 'GET',
         }).then((response) => {
             console.log(response);
-            ugaCount = response.DonorTotal;
-            ugaDate = response.LastUpdated;
+            ugaCount = response.info.DonorTotal;
+            ugaDate = response.info.LastUpdated;
             
             let ugaTimeArr = ugaDate.split(" ");
             ugaTime = ugaTimeArr[1];
@@ -76,7 +76,7 @@ $(document).ready(()=>{
 
             // COUNTER
             let start // set on the first step to the timestamp provided
-            const elements = Array.from(document.getElementsByClassName('count')) // get the elements
+            const elements = Array.from(document.getElementsByClassName('ugaCount')) // get the elements
             console.log(elements);
 
             elements.forEach(el => {
@@ -102,8 +102,7 @@ $(document).ready(()=>{
             })
         })
     }
-
-    getAubData();
     getUgaData();
+    getAubData();
 
 })
