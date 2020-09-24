@@ -18,6 +18,13 @@ const getAubData = () => {
 
         let aubDay = dateObj.getDate(aubDate);
 
+        //clear DOM elements
+        $('.aubCount').empty();
+        $('.aubCountStu').empty();
+        $('.aubDate').empty();
+        $('.aubTime').empty();
+
+        //append data to DOM
         $('.aubCount').append(aubCount);
         $('.aubCountStu').append(aubCountStu);
         $('.aubDate').append(aubDay);
@@ -70,6 +77,13 @@ const getUgaData = () => {
         let ugaDay = dateObj.getDate(ugaDate);
         console.log(`${ugaCount} donors as of ${ugaTime} EDT on September ${ugaDay}`);
 
+        //clear DOM elements
+        $('.ugaCount').empty();
+        $('.ugaCountStu').empty();
+        $('.ugaDate').empty();
+        $('.ugaTime').empty();
+
+        //append data to DOM
         $('.ugaCount').append(ugaCount);
         $('.ugaCountStu').append(ugaCountStu);
         $('.ugaDate').append(ugaDay);
@@ -110,7 +124,9 @@ $(document).ready(()=>{
     getAubData();
 
     //set timer to update ugaData every minute
-//     setTimeout(()=> {
-//         getUgaData();
-//     }, 1000);
+    // setInterval(()=> {
+            // $('.ugaCount').innerHTML(ugaCount);
+            // $('.ugaCountStu').innerHTML(ugaCountStu);
+    //     getUgaData();
+    // }, 10000);
 })
