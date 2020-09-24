@@ -32,7 +32,7 @@ const getAubData = () => {
 
         // COUNTER
         let start // set on the first step to the timestamp provided
-        const elements = Array.from(document.getElementsByClassName('aubCount')) // get the elements
+        const elements = Array.from(document.getElementsByClassName('count')) // get the elements
         console.log(elements);
 
         elements.forEach(el => {
@@ -75,11 +75,11 @@ const getUgaData = () => {
         ugaTime = ugaTimeArr[1];
 
         let ugaDay = dateObj.getDate(ugaDate);
-        console.log(`${ugaCount} donors as of ${ugaTime} EDT on September ${ugaDay}`);
+        console.log(`${ugaCount} donors and ${ugaCountStu} student donors as of ${ugaTime} EDT on September ${ugaDay}`);
 
         //clear DOM elements
         $('.ugaCount').empty();
-        $('.ugaCountStu').empty();
+        $('.ugaCountStu').innerHTML = "";
         $('.ugaDate').empty();
         $('.ugaTime').empty();
 
@@ -91,7 +91,7 @@ const getUgaData = () => {
 
         // COUNTER
         let start // set on the first step to the timestamp provided
-        const elements = Array.from(document.getElementsByClassName('ugaCount')) // get the elements
+        const elements = Array.from(document.getElementsByClassName('count')) // get the elements
         console.log(elements);
 
         elements.forEach(el => {
