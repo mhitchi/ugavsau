@@ -12,17 +12,18 @@ $(document).ready(()=>{
         }).then((response) => {
             console.log(response);
             aubCount = response.DonorTotal;
+            aubCountStu = response.StudentTotal;
             aubDate = response.LastUpdated;
             
             let aubTimeArr = aubDate.split(" ");
             aubTime = aubTimeArr[1];
 
             let aubDay = dateObj.getDate(aubDate);
-            console.log(`${aubCount} donors as of ${aubTime} EDT on September ${aubDay}`);
 
-            $('.aubCount').append(aubCount)
-            $('.aubDate').append(aubDay)
-            $('.aubTime').append(aubTime)
+            $('.aubCount').append(aubCount);
+            $('.aubCountStu').append(aubCountStu);
+            $('.aubDate').append(aubDay);
+            $('.aubTime').append(aubTime);
 
             // COUNTER
             let start // set on the first step to the timestamp provided
@@ -62,6 +63,7 @@ $(document).ready(()=>{
         }).then((response) => {
             console.log(response);
             ugaCount = response.info.DonorTotal;
+            ugaCountStu = response.info.StudentTotal;
             ugaDate = response.info.LastUpdated;
             
             let ugaTimeArr = ugaDate.split(" ");
@@ -70,9 +72,10 @@ $(document).ready(()=>{
             let ugaDay = dateObj.getDate(ugaDate);
             console.log(`${ugaCount} donors as of ${ugaTime} EDT on September ${ugaDay}`);
 
-            $('.ugaCount').append(ugaCount)
-            $('.ugaDate').append(ugaDay)
-            $('.ugaTime').append(ugaTime)
+            $('.ugaCount').append(ugaCount);
+            $('.ugaCountStu').append(ugaCountStu);
+            $('.ugaDate').append(ugaDay);
+            $('.ugaTime').append(ugaTime);
 
             // COUNTER
             let start // set on the first step to the timestamp provided
