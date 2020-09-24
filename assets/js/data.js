@@ -1,10 +1,11 @@
-let aubCount, ugaCount, aubCountStu, ugaCountStu, aubDate, ugaDate, aubTime, ugaTime;
 let dateObj = new Date();
+let urls = ['https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json', 'https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php']
+let schools = ['aub', 'uga']
 
-const getAubData = () => {
+const getData = (url) => {
 
     $.ajax({
-        url:'https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json',
+        url: url,
         dataType: 'json',
         type: 'GET',
     }).then((response) => {
@@ -59,69 +60,15 @@ const getAubData = () => {
     })
 }
 
-const getUgaData = () => {
-
-    $.ajax({
-        url:'https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php',
-        dataType: 'json',
-        type: 'GET',
-    }).then((response) => {
-        console.log(response);
-        ugaCount = response.info.DonorGiftTotal;
-        ugaCountStu = response.info.StudentGiftTotal;
-        ugaDate = response.info.LastUpdated;
-        
-        let ugaTimeArr = ugaDate.split(" ");
-        ugaTime = ugaTimeArr[1];
-
-        let ugaDay = dateObj.getDate(ugaDate);
-        console.log(`${ugaCount} donors and ${ugaCountStu} student donors as of ${ugaTime} EDT on September ${ugaDay}`);
-
-        //clear DOM elements
-        $('.ugaCount').empty();
-        $('.ugaCountStu').innerHTML = "";
-        $('.ugaDate').empty();
-        $('.ugaTime').empty();
-
-        //append data to DOM
-        $('.ugaCount').append(ugaCount);
-        $('.ugaCountStu').append(ugaCountStu);
-        $('.ugaDate').append(ugaDay);
-        $('.ugaTime').append(ugaTime);
-
-        // COUNTER
-        let start // set on the first step to the timestamp provided
-        const elements = Array.from(document.getElementsByClassName('count')) // get the elements
-        console.log(elements);
-
-        elements.forEach(el => {
-            const final = parseInt(el.textContent, 10) // parse out the final number
-            console.log(final);
-            const duration = 2000 // duration in ms
-            const step = ts => {
-            if (!start) {
-                start = ts
-            }
-            // get the time passed as a fraction of total duration
-            let progress = (ts - start) / duration 
-
-            el.textContent = Math.floor(progress * final) // set the text
-            if (progress < 1) {
-                // if we're not 100% complete, request another animation frame
-                requestAnimationFrame(step) 
-            }
-            }
-
-            // start the animation
-            requestAnimationFrame(step)
-        })
-    })
-}
 
 $(document).ready(()=>{
+    schools.forEach((school) => {
+        let i = indexOf(school);
+        let url = urls[i];
 
-    getUgaData();
-    getAubData();
+        getData(school, url);
+    })
+    }
 
     //set timer to update ugaData every minute
     // setInterval(()=> {
