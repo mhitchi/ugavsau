@@ -1,8 +1,19 @@
 let dateObj = new Date();
-let urls = ['https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json', 'https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php']
-let schools = ['aub', 'uga']
+//let urls = ['https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json', 'https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php']
+//let schools = ['aub', 'uga']
+let schools = [
+    {
+        name: "uga",
+        url: "https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php"
+    },
+    {
+        name: "aub",
+        url: "https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json"
+    }
+]
 
-const getData = (school, jsonUrl) => {
+
+const getData = (name, jsonUrl) => {
 
     $.ajax({
         url: jsonUrl,
@@ -12,9 +23,15 @@ const getData = (school, jsonUrl) => {
         console.log(response);
         let count, countStu, date;
 
-        count = response.DonorTotal;
-        countStu = response.StudentTotal;
-        date = response.LastUpdated;
+        if (name == "aub") {
+            count = response.DonorTotal;
+            countStu = response.StudentTotal;
+            date = response.LastUpdated;
+        } else if (name == "uga") {
+            count = response.info.DonorGiftsTotal;
+            countStu = response.info.StudentGiftsTotal;
+            date = response.LastUpdated;
+        }
         
         let timeArr = date.split(" ");
         time = timeArr[1];
@@ -22,20 +39,20 @@ const getData = (school, jsonUrl) => {
         let day = dateObj.getDate(date);
 
         //clear DOM elements
-        $(`.${school}CountTotal`).empty();
-        $(`.${school}CountStu`).empty();
-        $(`.${school}Date`).empty();
-        $(`.${school}Time`).empty();
+        $(`.${name}CountTotal`).empty();
+        $(`.${name}CountStu`).empty();
+        $(`.${name}Date`).empty();
+        $(`.${name}Time`).empty();
 
         //append data to DOM
-        $(`.${school}CountTotal`).append(count);
-        $(`.${school}CountStu`).append(countStu);
-        $(`.${school}Date`).append(day);
-        $(`.${school}Time`).append(time);
+        $(`.${name}CountTotal`).append(count);
+        $(`.${name}CountStu`).append(countStu);
+        $(`.${name}Date`).append(day);
+        $(`.${name}Time`).append(time);
 
         // COUNTER
         let start // set on the first step to the timestamp provided
-        const elements = Array.from(document.getElementsByClassName(`.${school}Count`)) // get the elements
+        const elements = Array.from(document.getElementsByClassName(`.${name}Count`)) // get the elements
         console.log(elements);
 
         elements.forEach(el => {
@@ -65,10 +82,10 @@ const getData = (school, jsonUrl) => {
 
 $(document).ready(()=>{
     schools.forEach((school) => {
-        let i = schools.indexOf(school);
-        let url = urls[i];
+        let name = school.name;
+        let jsonUrl = school.url;
 
-        getData(school, url);
+        getData(name, jsonUrl);
     })
 
     //set timer to update ugaData every minute
