@@ -62,8 +62,8 @@ $(document).ready(()=>{
             type: 'GET',
         }).then((response) => {
             console.log(response);
-            ugaCount = response.info.DonorTotal;
-            ugaCountStu = response.info.StudentTotal;
+            ugaCount = response.info.DonorGiftTotal;
+            ugaCountStu = response.info.StudentGiftTotal;
             ugaDate = response.info.LastUpdated;
             
             let ugaTimeArr = ugaDate.split(" ");
