@@ -15,10 +15,15 @@ const doCount = (name) => {
     elements.forEach(el => {
         const final = parseInt(el.innerHTML, 10) // parse out the final number
         console.log(final);
-        let i;
-        while (i <= final) {
-            el.innerHTML = i;
-            i++;
+        const duration = 2000 // duration in ms
+        
+        let i = 0;
+        while (i < final) {
+            setInterval (() => {
+                el.textContent = i;
+                
+            }, 100)
+            i++
         }
     })
 }
