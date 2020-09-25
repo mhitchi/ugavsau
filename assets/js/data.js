@@ -2,14 +2,8 @@ const dateObj = new Date();
 //let urls = ['https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json', 'https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php']
 //let schools = ['aub', 'uga']
 const schools = [
-    {
-        name: "uga",
-        url: "https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php"
-    },
-    {
-        name: "aub",
-        url: "https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json"
-    }
+    {name: "uga", url: "https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php"},
+    {name: "aub", url: "https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json"}
 ]
 
 const doCount = (name) => {
@@ -21,26 +15,13 @@ const doCount = (name) => {
     elements.forEach(el => {
         const final = parseInt(el.innerHTML, 10) // parse out the final number
         console.log(final);
-        const duration = 2000 // duration in ms
-        const step = ts => {
-        if (!start) {
-            start = ts
+        let i;
+        while (i <= final) {
+            el.innerHTML = i;
+            i++;
         }
-        // get the time passed as a fraction of total duration
-        let progress = (ts - start) / duration 
-
-        el.textContent = Math.floor(progress * final) // set the text
-        if (progress < 1) {
-            // if we're not 100% complete, request another animation frame
-            requestAnimationFrame(step) 
-        }
-        }
-
-        // start the animation
-        requestAnimationFrame(step)
     })
 }
-
 
 const getData = (name, jsonUrl) => {
 
