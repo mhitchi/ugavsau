@@ -16,15 +16,21 @@ const doCount = (name) => {
         const final = parseInt(el.innerHTML, 10) // parse out the final number
         console.log(final);
         const duration = 2000 // duration in ms
-        
-        let i = 0;
-        while (i < final) {
-            setInterval (() => {
-                el.textContent = i;
-                
-            }, 100)
-            i++
+        const step = () => {
+            if (!start) {
+                start = ts
+            }
+            // get the time passed as a fraction of total duration
+            let progress = (ts - start) / duration 
+
+            el.textContent = Math.floor(progress * final) // set the text
+            if (progress < 1) {
+                // if we're not 100% complete, request another animation frame
+                requestAnimationFrame(step) 
+            }
         }
+        // start the animation
+        requestAnimationFrame(step)
     })
 }
 
