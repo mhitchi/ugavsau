@@ -1,7 +1,7 @@
-let dateObj = new Date();
+const dateObj = new Date();
 //let urls = ['https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json', 'https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php']
 //let schools = ['aub', 'uga']
-let schools = [
+const schools = [
     {
         name: "uga",
         url: "https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php"
@@ -21,16 +21,16 @@ const getData = (name, jsonUrl) => {
         type: 'GET',
     }).then((response) => {
         console.log(response);
-        let count, countStu, date;
+        let count, countStu, date, time;
 
         if (name == "aub") {
             count = response.DonorTotal;
             countStu = response.StudentTotal;
             date = response.LastUpdated;
         } else if (name == "uga") {
-            count = response.info.DonorGiftsTotal;
-            countStu = response.info.StudentGiftsTotal;
-            date = response.LastUpdated;
+            count = response.info.DonorGiftTotal;
+            countStu = response.info.StudentGiftTotal;
+            date = response.info.LastUpdated;
         }
         
         let timeArr = date.split(" ");
@@ -87,11 +87,4 @@ $(document).ready(()=>{
 
         getData(name, jsonUrl);
     })
-
-    //set timer to update ugaData every minute
-    // setInterval(()=> {
-            // $('.ugaCount').innerHTML(ugaCount);
-            // $('.ugaCountStu').innerHTML(ugaCountStu);
-    //     getUgaData();
-    // }, 10000);
 })
