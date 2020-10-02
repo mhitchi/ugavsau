@@ -1,5 +1,4 @@
 let aubCount, ugaCount, aubCountStu, ugaCountStu, aubDate, ugaDate, aubTime, ugaTime;
-let dateObj = new Date();
 
 const getAubData = () => {
 
@@ -16,7 +15,8 @@ const getAubData = () => {
         let aubTimeArr = aubDate.split(" ");
         aubTime = aubTimeArr[1];
 
-        let aubDay = dateObj.getDate(aubDate);
+        let aubDateArr = aubDate.split('-');
+        let aubDay = aubDateArr[1];
 
         //clear DOM elements
         $('.aubCount').empty();
@@ -62,19 +62,20 @@ const getAubData = () => {
 const getUgaData = () => {
 
     $.ajax({
-        url:'https://sandbox.dar.uga.edu/tanyac/gailconnector/givingweekdonorinfo.php',
+        url:'https://raw.githubusercontent.com/RAdrianKing/AUbeatweek/master/auburn.json',
         dataType: 'json',
         type: 'GET',
     }).then((response) => {
         console.log(response);
-        ugaCount = response.info.DonorGiftTotal;
-        ugaCountStu = response.info.StudentGiftTotal;
-        ugaDate = response.info.LastUpdated;
+        ugaCount = response.DonorGiftTotal;
+        ugaCountStu = response.StudentGiftTotal;
+        ugaDate = response.LastUpdated;
         
         let ugaTimeArr = ugaDate.split(" ");
         ugaTime = ugaTimeArr[1];
 
-        let ugaDay = dateObj.getDate(ugaDate);
+        let ugaDateArr = ugaDate.split('-');
+        let ugaDay = ugaDateArr[1];
         console.log(`${ugaCount} donors and ${ugaCountStu} student donors as of ${ugaTime} EDT on September ${ugaDay}`);
 
         //clear DOM elements
